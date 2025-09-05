@@ -1,15 +1,29 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --animate-blink: 1s blink infinite;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-gradient-to-br from-[#dbeafe] to-[#e9d5ff] text-gray-700;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+@keyframes blink {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: #364153;
   }
 }
