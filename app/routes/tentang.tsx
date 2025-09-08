@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Tentang() {
   return (
     <main className="flex flex-col px-2 md:px-4 grow mt-16 max-w-[1200px] mx-auto w-full justify-center">
@@ -11,9 +13,17 @@ export default function Tentang() {
         store ini, pengunjung dapat melakukan pencarian produk, hingga mencoba fitur interaktif lainnya tanpa harus
         khawatir dengan transaksi nyata.
       </p>
-      <p>Contact: </p>
-      <p>Email: novalsofyan.business@gmail.com</p>
-      <p>Discord: althalja / halzgame</p>
+      <h2 className="text-2xl font-bold mb-4 text-center">Kontak CS</h2>
+      <p className="text-center">
+        Email:{" "}
+        <Link
+          to={`mailto:novalsofyan.business@gmail.com?subject=Nosora Dummy Store - CS&body=Hello, i want to contact you about Nosora Dummy Store`}
+          className="text-center hover:text-red-500 transition-colors duration-300"
+        >
+          novalsofyan.business@gmail.com
+        </Link>
+      </p>
+      <p className="text-center">Discord username: althalja / halzgame</p>
     </main>
   );
 }

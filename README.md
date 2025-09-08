@@ -43,4 +43,13 @@ pnpm build
 
 ---
 
+## Lucid Dreamworks Dev ☕
+
+- Noval S (Nosora)
+  - Email: [novalsofyan.business@gmail.com](mailto:novalsofyan.business@gmail.com)
+  - Discord username: althalja / halzgame
+  - LinkedIn: [Noval S](https://www.linkedin.com/in/novalsofyan/)
+
+---
+
 Built with ❤️ using React Router v7 framework.
