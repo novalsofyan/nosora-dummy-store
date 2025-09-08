@@ -1,25 +1,26 @@
-# Welcome to React Router!
+# Nosora Dummy Store
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Modern online store website with search product filter.
 
-## Features
+### Installation for Local Host
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Requirement:
 
-## Getting Started
-
-### Installation
+- pnpm v10.14.x or newer
+- nodejs v22.x or newer
 
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
+```
+
+### Dotenv
+
+Create ".env" file in root project folder (same level as "package.json") with the following content:
+
+```bash
+VITE_BASE_URL_API=https://dummyjson.com
 ```
 
 ### Development
@@ -27,27 +28,19 @@ npm install
 Start the development server with HMR:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Your application will be available at `http://localhost:3000`.
+Your application will be available at `http://localhost:5173`.
 
 ## Building for Production
 
 Create a production build:
 
 ```bash
-npm run build
+pnpm build
 ```
-
-## Deployment
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fremix-run%2Freact-router-templates%2Ftree%2Fmain%2Fvercel&project-name=my-react-router-app&repository-name=my-react-router-app)
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router v7 framework.

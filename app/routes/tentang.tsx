@@ -1,0 +1,19 @@
+export default function Tentang() {
+  return (
+    <main className="flex flex-col px-2 md:px-4 grow mt-16 max-w-[1200px] mx-auto w-full justify-center">
+      <h1 className="text-2xl font-bold mt-4 mb-4 text-center">Tentang</h1>
+      <p className="text-justify mb-4">
+        Nosora Dummy Store adalah sebuah website simulasi yang dibuat untuk kebutuhan belajar dan eksperimen dalam
+        pengembangan aplikasi toko online. Di dalamnya tersedia berbagai macam produk, mulai dari kosmetik untuk
+        perawatan diri, makanan untuk manusia, makanan hewan untuk peliharaan kesayangan, furnitur, hingga beragam
+        kategori lainnya. Website ini tidak benar-benar melakukan transaksi jual beli, melainkan hanya berfungsi sebagai
+        sarana pembelajaran, uji coba fitur, dan contoh desain antarmuka sebuah website toko online. Dengan adanya dummy
+        store ini, pengunjung dapat melakukan pencarian produk, hingga mencoba fitur interaktif lainnya tanpa harus
+        khawatir dengan transaksi nyata.
+      </p>
+      <p>Contact: </p>
+      <p>Email: novalsofyan.business@gmail.com</p>
+      <p>Discord: althalja / halzgame</p>
+    </main>
+  );
+}
