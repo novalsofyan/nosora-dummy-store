@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 
 export default function Navbar() {
@@ -14,9 +14,24 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  // Handle perubahan size untuk UX Navbar
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isOpen]);
+
   return (
     <nav
-      className={`backdrop-blur-md fixed top-0 left-0 w-full z-50 shadow-md ${
+      className={`backdrop-blur-md fixed top-0 left-0 w-full shadow-md z-50 ${
         isOpen ? `bg-white` : `bg-white/20`
       } transition-colors duration-300`}
     >
@@ -59,7 +74,7 @@ export default function Navbar() {
 
       {/* Menu mobile */}
       <div
-        className={`md:hidden absolute top-16 left-0 w-full transition-all duration-300 ${
+        className={`md:hidden absolute top-16 left-0 w-full transition-all duration-300 border-t-1 border-black ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
