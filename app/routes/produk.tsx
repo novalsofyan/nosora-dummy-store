@@ -3,6 +3,17 @@ import { getProduct } from "~/utils/ProductData";
 import type { ProductPreview } from "~/types/ProductTypes";
 import { useLoaderData } from "react-router";
 import { useState, useMemo } from "react";
+import type { Route } from "./+types/produk";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Produk - Nosora Dummy Store" },
+    {
+      name: "description",
+      content: "Temukan berbagai macam produk yang ada di Toko kami!",
+    },
+  ];
+}
 
 // Fetch data product
 export async function loader() {

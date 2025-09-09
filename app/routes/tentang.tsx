@@ -1,4 +1,16 @@
 import { Link } from "react-router";
+import type { Route } from "./+types/tentang";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Tentang - Nosora Dummy Store" },
+    {
+      name: "description",
+      content:
+        "Nosora Dummy Store: Simulasi toko online untuk belajar & eksperimen pengembangan aplikasi. Jelajahi berbagai produk tanpa transaksi nyata.",
+    },
+  ];
+}
 
 export default function Tentang() {
   return (
